@@ -1,0 +1,256 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Luxury Real Estate</title>
+    <link rel="stylesheet" href="styles.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css"
+    />
+  </head>
+  <body>
+    <!-- Header and Navigation -->
+    <header>
+      <nav class="navbar" id="navbar">
+        <div class="container">
+          <div>
+            <a href="#" class="logo">
+              <img src="/Assets/logo.jpg" alt="logo" width="150px" />
+            </a>
+          </div>
+          <div>
+            <ul class="nav-links">
+              <li><a href="#home">Home</a></li>
+              <li><a href="#properties">Properties</a></li>
+              <li><a href="#about">About</a></li>
+              <li><a href="#services">Services</a></li>
+              <li><a href="#testimonials">Testimonials</a></li>
+              <button>
+                <a href="#contact" class="contact-btn">Contact</a>
+              </button>
+            </ul>
+          </div>
+          <div class="hamburger-menu">
+            <button
+              type="button"
+              class="menu-toggle"
+              aria-controls="mobile-menu"
+              aria-expanded="false"
+            >
+              <span class="sr-only">Open main menu</span>
+              <svg
+                class="menu-icon"
+                fill="none"
+                stroke="currentColor"
+                viewBox="0 0 24 24"
+                xmlns="http://www.w3.org/2000/svg"
+              >
+                <path
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                  stroke-width="2"
+                  d="M4 6h16M4 12h16m-7 6h7"
+                />
+              </svg>
+            </button>
+          </div>
+        </div>
+      </nav>
+
+      <div class="hero" id="home">
+        <div class="hero-overlay"></div>
+        <video class="hero-video" autoplay muted loop>
+          <source src="/Assets/hero.mp4" type="video/mp4" />
+          Your browser does not support the video tag.
+        </video>
+        <div class="hero-content">
+          <h1>Find Your Dream Home</h1>
+          <p>Discover homes that inspire.</p>
+          <a href="#properties" class="cta-btn">Explore Properties</a>
+        </div>
+      </div>
+    </header>
+
+    <!-- Featured Properties Section -->
+    <section id="properties" class="properties section">
+      <div class="container-property">
+        <div class="section-heading">
+          <h2>Featured Properties</h2>
+        </div>
+        <div class="property-cards">
+          <div class="property-card hidden">
+            <img src="/Assets/landing1.jpg" alt="Property 1" />
+            <h3>Luxury Villa in Beverly Hills</h3>
+            <p>Price: $3,500,000</p>
+            <p>4 Beds • 3 Baths • 4,500 sqft</p>
+            <a href="#" class="property-btn">View Details</a>
+          </div>
+          <div class="property-card hidden">
+            <img src="/Assets/landing2.jpg" alt="Property 2" />
+            <h3>Modern Apartment in New York</h3>
+            <p>Price: $2,100,000</p>
+            <p>3 Beds • 2 Baths • 3,000 sqft</p>
+            <a href="#" class="property-btn">View Details</a>
+          </div>
+          <div class="property-card hidden">
+            <img src="/Assets/landing3.jpg" alt="Property 3" />
+            <h3>Beach House in Malibu</h3>
+            <p>Price: $4,750,000</p>
+            <p>5 Beds • 4 Baths • 5,200 sqft</p>
+            <a href="#" class="property-btn">View Details</a>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- About Us Section -->
+    <section id="about" class="about section">
+      <div class="container-property">
+        <div class="section-heading ">
+          <h2>About Us</h2>
+        </div>
+        <div class="about-content">
+          <div class="about-text hidden">
+            <p>
+              We are a premier real estate company specializing in luxury
+              properties. With years of experience, we help our clients find
+              their dream homes in the most exclusive locations.
+            </p>
+          </div>
+          <div class="about-images">
+            <img src="/Assets/team.jpg" alt="Our Team" class="hidden"/>
+            <img src="/Assets/office.jpg" alt="Our Office" class="hidden" />
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Services Section -->
+    <section id="services" class="services section">
+      <div class="container-property">
+        <div class="section-heading">
+          <h2>Our Services</h2>
+        </div>
+        <div class="service-cards hidden">
+          <div class="service-card">
+            <i class="fas fa-home"></i>
+            <h3>Property Management</h3>
+            <p>Comprehensive management services for your properties.</p>
+          </div>
+          <div class="service-card hidden">
+            <i class="fas fa-building"></i>
+            <h3>Luxury Rentals</h3>
+            <p>Exclusive rental options for luxury properties.</p>
+          </div>
+          <div class="service-card hidden">
+            <i class="fas fa-search-location"></i>
+            <h3>Property Search</h3>
+            <p>Find the perfect property that meets your needs.</p>
+          </div>
+          <div class="service-card hidden">
+            <i class="fas fa-key"></i>
+            <h3>Real Estate Consulting</h3>
+            <p>Expert advice for buying and selling properties.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Testimonials Section -->
+    <section id="testimonials" class="testimonials section">
+      <div class="container-property">
+        <div class="section-heading">
+          <h2>What Our Clients Say</h2>
+        </div>
+        <div class="testimonial-cards">
+          <div class="testimonial-card hidden">
+            <p>
+              "LuxuryRealEstate helped me find the perfect home. Their team is
+              professional and attentive to detail."
+            </p>
+            <h4>- John Doe</h4>
+          </div>
+          <div class="testimonial-card hidden">
+            <p>
+              "I couldn't be happier with the service I received. They found me
+              a beautiful apartment in no time!"
+            </p>
+            <h4>- Jane Smith</h4>
+          </div>
+          <div class="testimonial-card hidden">
+            <p>
+              "The best real estate company I've worked with. They truly
+              understand the luxury market."
+            </p>
+            <h4>- Michael Johnson</h4>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Call-to-Action Banner -->
+    <section class="cta-banner">
+      <div class="container-property">
+        <div class="section-heading">
+          <h2>Ready to find your dream home?</h2>
+        </div>
+        <a href="#contact" class="cta-btn contact-btn">Contact Us Today</a>
+      </div>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+      <div class="container-footer">
+        <div class="footer-content">
+          <div class="footer-logo">
+            <a href="#" class="logo">
+              <img src="/Assets/logo.jpg" alt="logo" width="150px" />
+            </a>
+          </div>
+          <div class="footer-links">
+            <a href="#home">Home</a>
+            <a href="#about">About</a>
+            <a href="#services">Services</a>
+            <a href="#contact" class="contact-btn">Contact</a>
+          </div>
+          <div class="footer-social">
+            <a href="#"><i class="fab fa-facebook-f"></i></a>
+            <a href="#"><i class="fab fa-twitter"></i></a>
+            <a href="#"><i class="fab fa-instagram"></i></a>
+            <a href="#"><i class="fab fa-linkedin-in"></i></a>
+          </div>
+        </div>
+      </div>
+      <hr>
+      <div class="footer-contact">
+        <p>Email: info@luxuryrealestate.com</p>
+        <p>Phone: +1 234 567 890</p>
+      </div>
+    </footer>
+
+    <!-- Contact Form Popup -->
+    <div class="contact-popup" id="contact-form">
+      <div class="popup-content">
+          <span class="close-btn">&times;</span>
+          <h2>Contact Us</h2>
+          <form id="contactForm" action="https://formspree.io/f/mpwapqle" method="POST">
+              <label for="name">Name</label>
+              <input type="text" id="name" name="name" required />
+              <label for="email">Email</label>
+              <input type="email" id="email" name="email" required />
+              <label for="phone">Phone</label>
+              <input type="tel" id="phone" name="phone" required />
+              <label for="message">Message</label>
+              <textarea id="message" name="message" rows="4" required></textarea>
+              <button type="submit" class="submit-btn">Submit</button>
+              <p id="formMessage" class="form-message"></p>
+          </form>
+      </div>
+  </div>
+  
+
+    <script src="script.js"></script>
+  </body>
+</html>
